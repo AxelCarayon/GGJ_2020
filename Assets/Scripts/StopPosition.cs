@@ -35,10 +35,12 @@ public class StopPosition : MonoBehaviour
         positionX = position.x;
         if (positionY >= y_position_stop_up){
             m_Rigidbody.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+            m_Rigidbody.gravityScale = 0.0f;
         }
         if (positionY <= y_position_stop_down)
         {
             m_Rigidbody.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+            m_Rigidbody.gravityScale = 0.0f;
         }
         if (positionX <= x_position_stop_left)
         {
