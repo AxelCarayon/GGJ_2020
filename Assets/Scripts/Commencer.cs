@@ -2,31 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Encre : MonoBehaviour
+public class Commencer : MonoBehaviour
 {
+    [SerializeField] private string next_level = "nom_du_prochain_niveau";
     private Vector2 mousePos2D;
     private Vector3 mousePos;
-    private GameObject gomme;
-
-    
-
-    
-
-    
-    void OnMouseDown()
-    {   
-        if (gomme == null)
-        Destroy(gameObject);
-
+    // Start is called before the first frame update
+    void Start()
+    {
+        
     }
 
-
-    
+    // Update is called once per frame
     void Update()
     {
-        gomme = GameObject.Find("gomme");
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePos2D = new Vector2(mousePos.x, mousePos.y);
+
+    }
+    void OnMouseDown()
+    {
         
+
     }
 }
