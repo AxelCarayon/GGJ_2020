@@ -15,6 +15,13 @@ public class Quitter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos2D = new Vector2(mousePos.x, mousePos.y);
+
+    }
+     public void Quit()
+    {
+        Application.Quit();
+        Debug.Log("clic");
     }
 }

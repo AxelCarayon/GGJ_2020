@@ -20,9 +20,13 @@ public class Commencer : MonoBehaviour
         mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
     }
-    void OnMouseDown()
+    public void Commence()
     {
         
+
+    }
+    public void Credits()
+    {
 
     }
 }
