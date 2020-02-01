@@ -6,7 +6,10 @@ public class gomme : MonoBehaviour
 {
     
     public static bool possession = false;
-    
+       [SerializeField]
+    public SpriteRenderer background;
+    [SerializeField]
+    public Sprite noir;
     
     
     private Vector2 mousePos2D;
@@ -20,17 +23,25 @@ public class gomme : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(possession);
+        
 
     }
     
     void OnCollisionEnter2D(Collision2D other)
     {
-        print("oui");
-        if (other.gameObject.name == "gomme")
+        print(this.gameObject.name);
+        
+        if (this.gameObject.name == "gomme")
         {
-            Destroy(other.gameObject);
-            possession = true;
+            Destroy(this.gameObject);
+            possession = true; 
+        }
+
+        if (this.gameObject.name == "telecommande")
+        {
+            Destroy(this.gameObject);
+            possession = true; 
+            background.sprite = noir;
         }
 
         

@@ -16,25 +16,33 @@ public class detectTouch : MonoBehaviour
 
     public Boolean flag = true;
 
+    private GameObject telecommande;
+
     // Update is called once per frame
     void Update()
     {
+        telecommande = GameObject.Find("telecommande");
+
         if (Input.GetKeyDown("r"))
         {
             Application.LoadLevel(Application.loadedLevel);
         }
-        if (Input.GetKeyDown("p"))
-        {
-            if (flag)
+
+        if (telecommande == null){
+            if (Input.GetKeyDown("p"))
             {
-                background.sprite = noir;
-                flag = !flag;
-            }else{
-                background.sprite = blanc;
-                flag = !flag;
+                if (flag)
+                {
+                    background.sprite = blanc;
+                    flag = !flag;
+                }else{
+                    background.sprite = noir;
+                    flag = !flag;
+                }
+            
             }
-           
         }
+
 
     }
 }
