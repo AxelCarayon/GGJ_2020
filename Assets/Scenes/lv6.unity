@@ -2443,7 +2443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af092f6f5c83026488208f3ca198b1c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  next_level: lv2
+  next_level: menu
 --- !u!61 &1227650380
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2516,7 +2516,7 @@ SpriteRenderer:
   m_Size: {x: 3.32, y: 3.45}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1227650382

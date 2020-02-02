@@ -20,12 +20,16 @@ public class detectTouch : MonoBehaviour
 
     private float temps;
 
+    void Start() {
+        GameObject.Find("Tilemap_black").SetActive(true);
+    }
+
     // Update is called once per frame
     void Update()
     {
         telecommande = GameObject.Find("telecommande");
-        print(Time.time);
-                if (Input.GetKeyDown("r"))
+
+        if (Input.GetKeyDown("r"))
         {
             Application.LoadLevel(Application.loadedLevel);
         }
