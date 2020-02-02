@@ -22,11 +22,14 @@ public class Commencer : MonoBehaviour
     }
     public void Commence()
     {
+
         SceneManager.LoadScene("SampleScene");
+
 
     }
     public void Credits()
     {
-        //SceneManager.LoadScene(next_level);
+        SceneManager.LoadScene("Credits");
+
     }
 }
