@@ -29,29 +29,5 @@ public class SoundManagerScript : MonoBehaviour
     }
 
     public static void PlaySound (string clip){
-        switch (clip)
-        {
-            case "background":
-                audioSrc.PlayOneShot(backgroundSound);
-                break;
-            case "backgroundark":
-                audioSrc.PlayOneShot(backgroundDarkSound);
-                break;
-            case "butonpress":
-                audioSrc.PlayOneShot(boutonPressSound);
-                break;
-            case "effacer":
-                audioSrc.PlayOneShot(effacerSound);
-                break;
-            case "mouvementBlock":
-                audioSrc.PlayOneShot(mouvementBlockSound);
-                break;
-            case "restart":
-                audioSrc.PlayOneShot(restartSound);
-                break;
-            case "victory":
-                audioSrc.PlayOneShot(victorySound);
-                break;
-        }
     }
 }

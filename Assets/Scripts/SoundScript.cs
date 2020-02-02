@@ -28,6 +28,7 @@ public class SoundScript : MonoBehaviour
 
     public void PlayBackground(){
         background.Play();
+        background.loop = true;
     }
         public void PlayBackgroundDark(){
         backgroundark.Play();

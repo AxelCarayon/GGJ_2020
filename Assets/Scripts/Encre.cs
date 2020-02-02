@@ -8,15 +8,12 @@ public class Encre : MonoBehaviour
     private Vector3 mousePos;
     private GameObject gomme;
 
-    public AudioSource encreSound;
-
     
 
     
     void OnMouseDown()
     {   
         if (gomme == null){
-            encreSound.Play();
             Destroy(gameObject);
 
         }
