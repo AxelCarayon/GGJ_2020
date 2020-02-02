@@ -22,19 +22,11 @@ public class Commencer : MonoBehaviour
     }
     public void Commence()
     {
-<<<<<<< Updated upstream
         SceneManager.LoadScene("SampleScene");
-=======
-        
->>>>>>> Stashed changes
 
     }
     public void Credits()
     {
-<<<<<<< Updated upstream
         //SceneManager.LoadScene(next_level);
-=======
-        
->>>>>>> Stashed changes
     }
 }
