@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Commencer : MonoBehaviour
 {
-    [SerializeField] private string next_level = "nom_du_prochain_niveau";
     private Vector2 mousePos2D;
     private Vector3 mousePos;
     // Start is called before the first frame update
@@ -22,11 +22,11 @@ public class Commencer : MonoBehaviour
     }
     public void Commence()
     {
-        SceneManager.LoadScene(next_level);
+        SceneManager.LoadScene("SampleScene");
 
     }
     public void Credits()
     {
-        SceneManager.LoadScene(next_level);
+        //SceneManager.LoadScene(next_level);
     }
 }
