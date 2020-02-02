@@ -13,8 +13,6 @@ public class detectTouch : MonoBehaviour
 
     [SerializeField]
     public Sprite noir;
-    public AudioSource keydown;
-    public AudioClip sound;
 
 
     public Boolean flag = true;
@@ -36,11 +34,6 @@ public class detectTouch : MonoBehaviour
             Application.LoadLevel(Application.loadedLevel);
         }
 
-        if (Input.GetKeyDown("m"))
-            {
-                keydown.PlayOneShot(sound);
-            
-            }
 
         if (telecommande == null){
             if (Input.GetKeyDown("p"))

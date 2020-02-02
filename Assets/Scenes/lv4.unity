@@ -823,11 +823,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00186a024ec8e194db5fc33ba2b3cf52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  background: {fileID: 0}
-  blanc: {fileID: 0}
-  noir: {fileID: 0}
-  keydown: {fileID: 0}
-  sound: {fileID: 0}
+  background: {fileID: 266131743}
+  blanc: {fileID: 21300000, guid: 661f007b2d59b0440a1af83d4100b026, type: 3}
+  noir: {fileID: 21300000, guid: 569e2ca57a790954a9cea1d3ca1756a1, type: 3}
   flag: 1
 --- !u!114 &1515808799
 MonoBehaviour:
