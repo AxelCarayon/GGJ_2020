@@ -13,6 +13,9 @@ public class detectTouch : MonoBehaviour
 
     [SerializeField]
     public Sprite noir;
+    public AudioSource keydown;
+    public AudioClip sound;
+
 
     public Boolean flag = true;
 
@@ -21,7 +24,6 @@ public class detectTouch : MonoBehaviour
     private float temps;
 
     void Start() {
-        GameObject.Find("Tilemap_black").SetActive(true);
     }
 
     // Update is called once per frame
@@ -33,6 +35,12 @@ public class detectTouch : MonoBehaviour
         {
             Application.LoadLevel(Application.loadedLevel);
         }
+
+        if (Input.GetKeyDown("m"))
+            {
+                keydown.PlayOneShot(sound);
+            
+            }
 
         if (telecommande == null){
             if (Input.GetKeyDown("p"))

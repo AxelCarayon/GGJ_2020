@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour {
 	bool jump = false;
 	bool crouch = false;
 	
+	void Start() {
+		SoundManagerScript.PlaySound("background");
+	}
 	// Update is called once per frame
 	void Update () {
 
