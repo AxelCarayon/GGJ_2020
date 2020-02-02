@@ -32,4 +32,36 @@ public class Commencer : MonoBehaviour
         SceneManager.LoadScene("Credits");
 
     }
+    public void Retour()
+    {
+        SceneManager.LoadScene("menu2");
+    }
+    public void Levels()
+    {
+        SceneManager.LoadScene("Levels");
+    }
+    public void Lv1()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+    public void Lv2()
+    {
+        SceneManager.LoadScene("lv2");
+    }
+    public void Lv3()
+    {
+        SceneManager.LoadScene("lv3");
+    }
+    public void Lv4()
+    {
+        SceneManager.LoadScene("lv4");
+    }
+    public void Lv5()
+    {
+        SceneManager.LoadScene("lv5");
+    }
+    public void Lv6()
+    {
+        SceneManager.LoadScene("lv6");
+    }
 }
