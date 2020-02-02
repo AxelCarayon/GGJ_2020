@@ -29,7 +29,7 @@ public class gomme : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D other)
     {
-        print(this.gameObject.name);
+        //print(this.gameObject.name);
         
         if (this.gameObject.name == "gomme")
         {
