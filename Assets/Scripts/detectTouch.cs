@@ -18,12 +18,14 @@ public class detectTouch : MonoBehaviour
 
     private GameObject telecommande;
 
+    private float temps;
+
     // Update is called once per frame
     void Update()
     {
         telecommande = GameObject.Find("telecommande");
-
-        if (Input.GetKeyDown("r"))
+        print(Time.time);
+                if (Input.GetKeyDown("r"))
         {
             Application.LoadLevel(Application.loadedLevel);
         }
